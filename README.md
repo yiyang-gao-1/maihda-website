@@ -45,16 +45,116 @@ maihda-website/
 
 ## 🔧 Local Development
 
-## 📁 Project Structure
-maihda-website/
-├── index.html          # Homepage
-├── _config.yml         # Jekyll configuration
-├── data/
-│   ├── papers.json     # Paper database
-│   └── statistics.json # Site statistics
-├── scripts/
-│   └── paper_scraper.py # Automated paper collection
-├── pages/              # Additional pages
-├── assets/             # CSS, JS, images
-└── README.md           # This file
+1. Clone the repository:
+```bash
+git clone https://github.com/yiyang-gao-1/maihda-website.git
+cd maihda-website
+```
 
+Install Python dependencies (for paper scraper):
+
+``` bash
+bashpip install -r requirements.txt
+```
+
+Run the paper scraper:
+
+```bash
+bashpython scripts/paper_scraper.py
+```
+
+Serve locally with Jekyll:
+```bash
+bashbundle exec jekyll serve
+```
+
+View at http://localhost:4000
+
+## 📊 Paper Collection
+The automated paper scraper searches for MAIHDA-related papers from:
+
+Google Scholar
+PubMed (planned)
+CrossRef (planned)
+
+Papers are automatically categorized into:
+
+Introduction/Methodology
+Public Health Applications
+Education Applications
+Spatial Extensions
+Longitudinal Extensions
+Bayesian Implementations
+
+## 🤝 Contributing
+We welcome contributions! You can help by:
+
+Submitting Papers: Add MAIHDA papers we might have missed
+Improving Categorization: Suggest better organization of papers
+Code Contributions: Enhance the scraper or website features
+Documentation: Improve tutorials and resources
+
+To contribute:
+
+Fork the repository
+Create a feature branch (git checkout -b feature/YourFeature)
+Commit your changes (git commit -m 'Add some feature')
+Push to the branch (git push origin feature/YourFeature)
+Open a Pull Request
+
+## 📝 Manual Paper Addition
+To manually add a paper, edit data/papers.json:
+json{
+  "title": "Your Paper Title",
+  "authors": "Author Names",
+  "year": "2024",
+  "journal": "Journal Name",
+  "url": "https://doi.org/...",
+  "categories": ["category1", "category2"]
+}
+
+## 🐛 Known Issues
+
+Google Scholar rate limiting may affect automated collection
+Some papers may require manual categorization
+PDF extraction is not yet implemented
+
+## 📅 Roadmap
+
+ Implement PubMed API integration
+ Add user authentication for paper submissions
+ Create interactive citation network visualization
+ Develop R/Python code examples section
+ Add search functionality
+ Implement paper quality metrics
+
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👥 Team
+
+Dr. Yiyang Gao - Research Associate in Quantitative Social Science, University of Sheffield
+MAIHDA Project Team
+
+## 📧 Contact
+
+Email: y.gao@sheffield.ac.uk
+GitHub: @yiyang-gao-1
+Project Issues: GitHub Issues
+
+## 🙏 Acknowledgments
+
+University of Sheffield
+MAIHDA research community
+Contributors and paper authors
+
+## 📚 Citation
+If you use this resource in your research, please cite:
+bibtex@misc{maihda-hub-2024,
+  title={MAIHDA Resource Hub},
+  author={Gao, Yiyang},
+  year={2024},
+  url={https://yiyang-gao-1.github.io/maihda-website/}
+}
+
+Last updated: September 2025
