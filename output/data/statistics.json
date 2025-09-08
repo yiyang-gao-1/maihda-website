@@ -1,0 +1,15 @@
+{
+  "total_papers": 3,
+  "papers_by_year": {
+    "2018": 1,
+    "2020": 1,
+    "2021": 1
+  },
+  "papers_by_category": {
+    "introduction": 1,
+    "methodology": 2,
+    "education": 1,
+    "spatial": 1
+  },
+  "last_updated": "2024-09-08T21:30:00"
+}
