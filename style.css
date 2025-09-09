@@ -1,0 +1,20 @@
+:root {
+  --brand-violet: #660099;
+  --dark-violet: #4b006e;
+  --pale-violet: #c8a2c8;
+  --electric-violet: #8f00ff;
+  --powder-violet: #e6e6fa;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+a {
+  color: var(--brand-violet);
+}
+a:hover {
+  color: var(--electric-violet);
+}
+
