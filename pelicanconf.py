@@ -1,13 +1,13 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- #
+
 AUTHOR = 'Dr Yiyang Gao'
 SITENAME = 'MAIHDA Resource Hub'
 SITEURL = ""
 
 PATH = "content"
 
-MARKUP = ('md', 'markdown')
-
 TIMEZONE = 'Europe/London'
-
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
@@ -17,9 +17,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
+# Blogroll / Links
 LINKS = (
-    ('University of Sheffield', 'https://sheffield.ac.uk/education/smi'),
+    ('University of Sheffield', 'https://www.sheffield.ac.uk/education/smi'),
     ('MAIHDA Project', 'https://intersectionalhealth.org/projects/esrc-maihda-project/'),
     ('Google Scholar', 'https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=MAIHDA&btnG='),
 )
@@ -32,29 +32,42 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
-
 # Theme settings
 THEME = 'themes/maihda-theme'
-DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives']
-PAGINATED_TEMPLATES = {
-    'index': None,
-    'tag': None,
-    'category': None,
-    'author': None,
-}
 
-# Static paths
-STATIC_PATHS = ['data', 'images', 'extra']
+# Direct templates (Pelican will auto-generate these)
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives']
 
 # Menu items
 MENUITEMS = (
     ('Home', '/'),
     ('Papers', '/category/papers.html'),
     ('Resources', '/pages/resources.html'),
+    ('Applications', '/pages/applications.html'),
     ('About', '/pages/about.html'),
 )
 
+# Static paths: allow serving data, images, CSS/JS
+STATIC_PATHS = [
+    'data',
+    'images',
+    'extra',
+]
+
+# Extra path metadata (ensures CSS is copied correctly)
+EXTRA_PATH_METADATA = {
+    'extra/style.css': {'path': 'theme/css/style.css'},
+}
+
+# Plugins (optional, you can extend later)
+PLUGIN_PATHS = ['plugins']
+PLUGINS = []
+
+# Markdown settings
+MARKUP = ('md', 'markdown')
+
 # GitHub Pages settings
 GITHUB_URL = 'https://github.com/yiyang-gao-1/maihda-website'
+
+# Useful variables for templates
+CURRENT_YEAR = 2025
