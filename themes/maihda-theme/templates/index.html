@@ -1,26 +1,57 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
-</head>
-<body>
-<p class="p1">{% extends "base.html" %}</p>
-<p class="p1">{% block content %}</p>
-<p class="p1">&lt;div class="articles"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% for article in articles_page.object_list %}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;&lt;a href="{{ SITEURL }}/{{ article.url }}"&gt;{{ article.title }}&lt;/a&gt;&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;{{ article.summary }}&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% endfor %}</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p1">{% endblock %}</p>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} - Welcome{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<div class="text-center py-5">
+  <h1 class="fw-bold" style="color:#660099;">Welcome to MAIHDA Resource Hub</h1>
+  <p class="lead">Your gateway to Multilevel Analysis of Individual Heterogeneity and Discriminatory Accuracy</p>
+  <a href="{{ SITEURL }}/pages/resources.html" class="btn btn-lg" style="background-color:#FFCC33; color:#000;">Get Started</a>
+</div>
+
+<!-- Feature Cards -->
+<div class="row text-center my-5">
+  <div class="col-md-4 mb-4">
+    <div class="card shadow-sm h-100 border-0">
+      <div class="card-body">
+        <h4 class="card-title fw-bold" style="color:#660099;">📑 Paper Repository</h4>
+        <p>Browse curated MAIHDA research papers, automatically updated.</p>
+        <a href="{{ SITEURL }}/category/papers.html" class="stretched-link">Explore</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card shadow-sm h-100 border-0">
+      <div class="card-body">
+        <h4 class="card-title fw-bold" style="color:#660099;">🎥 Learn MAIHDA</h4>
+        <p>Watch tutorials, access beginner guides, and download sample data.</p>
+        <a href="{{ SITEURL }}/pages/resources.html" class="stretched-link">Learn</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card shadow-sm h-100 border-0">
+      <div class="card-body">
+        <h4 class="card-title fw-bold" style="color:#660099;">🔧 Tools & Applications</h4>
+        <p>Play with Shiny apps, explore case studies, and see real-world impact.</p>
+        <a href="{{ SITEURL }}/pages/applications.html" class="stretched-link">Try</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Latest Papers -->
+<div class="my-5">
+  <h2 class="fw-bold mb-4" style="color:#660099;">Latest Papers</h2>
+  <ul class="list-group">
+    {% for article in articles[:5] %}
+    <li class="list-group-item">
+      <a href="{{ SITEURL }}/{{ article.url }}"><strong>{{ article.title }}</strong></a>
+      <br><small>{{ article.date.strftime('%Y') }} · {{ article.category }}</small>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock %}
