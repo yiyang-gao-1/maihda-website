@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MAIHDA Resource Hub - Introduction</title><link href="https://yiyang-gao-1.github.io/maihda-website/" rel="alternate"/><link href="https://yiyang-gao-1.github.io/maihda-website/feeds/introduction.atom.xml" rel="self"/><id>https://yiyang-gao-1.github.io/maihda-website/</id><updated>2024-09-08T00:00:00+01:00</updated><entry><title>Welcome to MAIHDA Resource Hub</title><link href="https://yiyang-gao-1.github.io/maihda-website/welcome.html" rel="alternate"/><published>2024-09-08T00:00:00+01:00</published><updated>2024-09-08T00:00:00+01:00</updated><author><name>Dr Yiyang Gao</name></author><id>tag:yiyang-gao-1.github.io,2024-09-08:/maihda-website/welcome.html</id><summary type="html">&lt;p&gt;This is the first post on the MAIHDA Resource Hub. This website will serve as a comprehensive collection of papers and resources related to Multilevel Analysis of Individual Heterogeneity and Discriminatory Accuracy.&lt;/p&gt;
+&lt;h2&gt;What to Expect&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Regular updates with new MAIHDA papers&lt;/li&gt;
+&lt;li&gt;Categorized resources by application area&lt;/li&gt;
+&lt;li&gt;Methodological extensions and tutorials …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;This is the first post on the MAIHDA Resource Hub. This website will serve as a comprehensive collection of papers and resources related to Multilevel Analysis of Individual Heterogeneity and Discriminatory Accuracy.&lt;/p&gt;
+&lt;h2&gt;What to Expect&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Regular updates with new MAIHDA papers&lt;/li&gt;
+&lt;li&gt;Categorized resources by application area&lt;/li&gt;
+&lt;li&gt;Methodological extensions and tutorials&lt;/li&gt;
+&lt;li&gt;Community contributions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Stay tuned for more content!&lt;/p&gt;</content><category term="Introduction"/><category term="maihda"/><category term="welcome"/></entry></feed>
