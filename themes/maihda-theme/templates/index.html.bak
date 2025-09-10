@@ -1,13 +1,13 @@
 {% extends "base.html" %}
-{% block title %}{{ SITENAME }} - Home{% endblock %}
+{% block title %}{{ SITENAME }} - Welcome{% endblock %}
 
 {% block content %}
 
 <!-- Hero Section -->
 <div class="text-center py-5">
-  <h1 class="fw-bold" style="color:#660099;">Welcome to {{ SITENAME }}</h1>
-  <p class="lead">Your gateway to Multilevel Analysis of Individual Heterogeneity and Discriminatory Accuracy (MAIHDA)</p>
-  <a href="{{ SITEURL }}/pages/learn.html" class="btn btn-lg" style="background-color:#FFCC33; color:#000;">Get Started</a>
+  <h1 class="fw-bold" style="color:#660099;">Welcome to MAIHDA Resource Hub</h1>
+  <p class="lead">Your gateway to Multilevel Analysis of Individual Heterogeneity and Discriminatory Accuracy</p>
+  <a href="{{ SITEURL }}/pages/resources.html" class="btn btn-lg" style="background-color:#FFCC33; color:#000;">Get Started</a>
 </div>
 
 <!-- Feature Cards -->
@@ -26,7 +26,7 @@
       <div class="card-body">
         <h4 class="card-title fw-bold" style="color:#660099;">🎥 Learn MAIHDA</h4>
         <p>Watch tutorials, access beginner guides, and download sample data.</p>
-        <a href="{{ SITEURL }}/pages/learn.html" class="stretched-link">Learn</a>
+        <a href="{{ SITEURL }}/pages/resources.html" class="stretched-link">Learn</a>
       </div>
     </div>
   </div>
@@ -35,37 +35,7 @@
       <div class="card-body">
         <h4 class="card-title fw-bold" style="color:#660099;">🔧 Tools & Applications</h4>
         <p>Play with Shiny apps, explore case studies, and see real-world impact.</p>
-        <a href="{{ SITEURL }}/pages/tools.html" class="stretched-link">Try</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Stats Section -->
-<div class="row text-center my-5">
-  <div class="col-md-4">
-    <div class="card shadow-sm border-0">
-      <div class="card-body">
-        <h3 class="fw-bold" style="color:#660099;">{{ SITE_STATS.total_papers or "–" }}</h3>
-        <p class="mb-0">Papers Collected</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card shadow-sm border-0">
-      <div class="card-body">
-        <h3 class="fw-bold text-success">{{ SITE_STATS.papers_by_category|length or "–" }}</h3>
-        <p class="mb-0">Categories</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card shadow-sm border-0">
-      <div class="card-body">
-        <h3 class="fw-bold text-info">
-          {{ SITE_STATS.last_updated[:4] if SITE_STATS.last_updated else "–" }}
-        </h3>
-        <p class="mb-0">Last Updated</p>
+        <a href="{{ SITEURL }}/pages/applications.html" class="stretched-link">Try</a>
       </div>
     </div>
   </div>

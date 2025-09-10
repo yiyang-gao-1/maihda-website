@@ -23,8 +23,13 @@ This hub complements the [MAIHDA ESRC Project Website](https://intersectionalhea
 
 ## The Team
 
-- **Dr Yiyang Gao** – Research Associate in Quantitative Social Science, University of Sheffield  
-- **MAIHDA Project Team** – [intersectionalhealth.org](https://intersectionalhealth.org/projects/esrc-maihda-project/)
+- **Dr. Andrew Bell** — Senior Lecturer in Quantitative Social Sciences, Sheffield Methods Institute, University of Sheffield
+- **Dr. Daniel Holman** — Senior Lecturer in Sociology and Public Health, University of Sheffield
+- **Prof. George Leckie** — Professor of Social Statistics, Centre for Multilevel Modelling, School of Education, University of Bristol
+- **Prof. Clare R Evans** — Associate Professor, Department of Sociology, University of Oregon, USA
+- **Dr. Will Johnson** — Reader in Epidemiology and Population Health
+- **Dr. Yiyang Gao** — Research Associate in Quantitative Social Science, Sheffield Methods Institute, University of Sheffield
+- **Dr. Natalie C Bennett** — Research Associate, Sheffield Methods Institute, University of Sheffield
 
 ---
 

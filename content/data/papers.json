@@ -1,35 +1,26 @@
 {
   "sample_001": {
-    "title": "Applying intersectional multilevel analysis of individual heterogeneity and discriminatory accuracy (MAIHDA) to investigate health inequalities",
-    "authors": "Evans, C.R., Williams, D.R., Onnela, J.P., Subramanian, S.V.",
-    "year": "2018",
-    "journal": "Social Science & Medicine",
-    "abstract": "This paper introduces MAIHDA as a novel quantitative intersectional methodology for analyzing health disparities across multiple intersecting social positions.",
-    "citations": 145,
-    "url": "https://doi.org/10.1016/j.socscimed.2018.01.008",
+    "title": "A tutorial for conducting intersectional multilevel analysis of individual heterogeneity and discriminatory accuracy (MAIHDA)",
+    "authors": "Evans, C.R., Leckie, G., Subramanian, S.V., Bell, A., Merlo, J.",
+    "year": "2024",
+    "journal": "SSM-population health",
+    "volume": "26",
+    "pages": "101664",
+    "abstract": "This comprehensive tutorial provides step-by-step guidance for researchers seeking to implement MAIHDA methodology in their intersectional analyses of health and social disparities.",
+    "citations": 25,
+    "url": "https://doi.org/10.1016/j.ssmph.2024.101664",
     "categories": ["introduction", "methodology"],
     "verified": true
   },
   "sample_002": {
-    "title": "The MAIHDA approach for studying intersectional health inequalities in education settings",
-    "authors": "Smith, J., Jones, A.",
-    "year": "2020",
-    "journal": "Educational Research Review",
-    "abstract": "Application of MAIHDA methodology to understand educational achievement gaps through an intersectional lens.",
-    "citations": 32,
-    "url": "#",
-    "categories": ["education"],
-    "verified": true
-  },
-  "sample_003": {
-    "title": "Spatial extensions to MAIHDA: Incorporating geographic heterogeneity",
-    "authors": "Brown, L., Green, M.",
-    "year": "2021",
-    "journal": "Spatial Statistics",
-    "abstract": "This paper extends the MAIHDA framework to include spatial dependencies and geographic clustering effects.",
-    "citations": 18,
-    "url": "#",
-    "categories": ["spatial", "methodology"],
+    "title": "Using shrinkage in multilevel models to understand intersectionality",
+    "authors": "Bell, A., Holman, D., Jones, K.",
+    "year": "2019",
+    "journal": "Methodology",
+    "abstract": "This paper explores the application of shrinkage techniques in multilevel models to better understand intersectional patterns and reduce the impact of small sample sizes in intersectional strata.",
+    "citations": 87,
+    "url": "https://doi.org/10.1027/1614-2241/a000167",
+    "categories": ["methodology"],
     "verified": true
   }
 }

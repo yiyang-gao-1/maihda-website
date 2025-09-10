@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-import json
-import os
-
 AUTHOR = 'Dr Yiyang Gao'
 SITENAME = 'MAIHDA Resource Hub'
 SITEURL = ""
@@ -75,23 +72,3 @@ GITHUB_URL = 'https://github.com/yiyang-gao-1/maihda-website'
 # Useful variables for templates
 CURRENT_YEAR = 2025
 
-# Load site statistics
-stats_file = os.path.join(os.path.dirname(__file__), 'content/data/statistics.json')
-if os.path.exists(stats_file):
-    with open(stats_file, 'r') as f:
-        SITE_STATS = json.load(f)
-else:
-    SITE_STATS = {
-        'total_papers': 3,
-        'papers_by_year': {'2018': 1, '2019': 1, '2024': 1},
-        'papers_by_category': {'introduction': 2, 'methodology': 2},
-        'last_updated': '2025-09-10T14:30:00'
-    }
-
-# Load papers data
-papers_file = os.path.join(os.path.dirname(__file__), 'content/data/papers.json')
-if os.path.exists(papers_file):
-    with open(papers_file, 'r') as f:
-        PAPERS_DATA = json.load(f)
-else:
-    PAPERS_DATA = {}
